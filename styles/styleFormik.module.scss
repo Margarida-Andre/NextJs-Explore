@@ -1,0 +1,59 @@
+@mixin field_btn{
+    width: 97%;
+    height: 53px;
+}
+
+$background: rgb(90, 0, 90);
+$margin_top: 30px;
+
+
+.section{
+    width: 100%;
+     height: 801px;
+     background-color: $background;
+     position: fixed;
+     font-family: roboto;
+}
+.h1{
+    text-align: center;
+}
+
+
+.form{
+    align-items: center;
+    width: 27%;
+    height: 660px;
+    background-color: rgb(228, 228, 228);
+    margin: 80px 600px;
+    padding: 50px 60px;
+    color:black;
+    border-radius: 5px;
+}
+
+.field{
+    @include field_btn;
+    border: 1px solid #dedede;  
+    border-radius: 6px;
+    margin-top: 5px;
+    
+}
+
+.btn{
+    @include field_btn; 
+    background-color: $background;
+    margin-top: $margin_top;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+
+.containerInput{
+    margin-top: $margin_top;
+}
+
+.errorMessage{
+    color: red;
+    text-align: center;
+}
+
+
